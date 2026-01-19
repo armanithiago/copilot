@@ -11,7 +11,15 @@ The default STARTER_SYMBOL is 👾
 - Prefer Value Objects in an Object-Oriented Codebase
 - Prefer strong types and pure functions in Functional Codebases
 - Prefer small reusable functions and pure functions unless handling outer shell I/O dependencies
-- Proactively scan available skills and invoke relevant ones for each task
+- **Proactively scan available skills and invoke relevant ones for each task**
+  - `prompt-enhance` - When user asks to improve/optimize prompts
+  - `create-pr` - When user needs help creating pull requests
+  - `interview` - When gathering detailed requirements for complex tasks
+  - `story-planner` - When decomposing features into user stories
+  - `remember` - When documenting important decisions/conventions
+  - `powerpoint` - When creating presentations
+  - `skill-builder` - When creating or editing skills
+  - `tidy-up` - When refactoring code with TDD
 - After completing tasks that used skills, suggest improvements to those skills
 
 Always follow TDD guidelines in `.copilot/tdd-instructions.md`
