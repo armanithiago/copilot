@@ -1,0 +1,177 @@
+{
+  "title": "Copilot Skills and Agents",
+  "author": "Development Team",
+  "slides": [
+    {
+      "title": "Copilot Skills & Agents",
+      "type": "title",
+      "subtitle": "GitHub Copilot CLI Extension Architecture"
+    },
+    {
+      "content": [
+        "Skills are reusable instruction sets for Copilot",
+        "Located in .github/skills/ directory",
+        "Each skill is a folder with SKILL.md file",
+        "Define when and how Copilot should assist",
+        "Enable Copilot to specialize in specific workflows"
+      ],
+      "title": "What Are Skills?",
+      "type": "content"
+    },
+    {
+      "content": [
+        "story-planner - Break features into user stories",
+        "skill-builder - Create and edit Copilot skills",
+        "powerpoint - Generate presentations and slides",
+        "interview - Conduct structured interviews",
+        "remember - Document persistent knowledge",
+        "tidy-up - TDD refactoring process"
+      ],
+      "title": "Available Skills",
+      "type": "content"
+    },
+    {
+      "content": [
+        ".github/ - Root directory for Copilot configuration",
+        "copilot-instructions.md - Global guidelines for Copilot",
+        "tdd-instructions.md - Testing best practices",
+        "skills/ - Collection of specialized agent skills",
+        "commands/ - Custom command definitions"
+      ],
+      "title": "Project Structure",
+      "type": "content"
+    },
+    {
+      "content": [
+        "Breaks applications into vertical slices",
+        "Creates user stories with acceptance criteria",
+        "Uses Gherkin Given/When/Then format",
+        "Focuses on user outcomes (WHAT/WHY not HOW)",
+        "Generates manual testing procedures"
+      ],
+      "title": "Story Planner",
+      "type": "content"
+    },
+    {
+      "content": [
+        "Guide for creating new Copilot skills",
+        "Documents proper SKILL.md format",
+        "Explains naming conventions and structure",
+        "Covers converting Claude skills to Copilot",
+        "Provides validation checklist for skills"
+      ],
+      "title": "Skill Builder",
+      "type": "content"
+    },
+    {
+      "content": [
+        "Creates .pptx files programmatically",
+        "Supports multiple slide types and layouts",
+        "Generates tables, charts, and visualizations",
+        "Accepts JSON structure for presentation design",
+        "Enables quick pitch deck and report creation"
+      ],
+      "title": "PowerPoint Skill",
+      "type": "content"
+    },
+    {
+      "content": [
+        "Conducts structured deep interviews",
+        "Gathers comprehensive requirements",
+        "Asks clarifying questions progressively",
+        "Collects information for specifications",
+        "Ensures complete understanding before design"
+      ],
+      "title": "Interview",
+      "type": "content"
+    },
+    {
+      "content": [
+        "Documents important project facts",
+        "Persists knowledge across sessions",
+        "Stores codebase conventions",
+        "Records technical decisions and rationales",
+        "Maintains in CLAUDE.md file"
+      ],
+      "title": "Remember",
+      "type": "content"
+    },
+    {
+      "content": [
+        "TDD-based refactoring process",
+        "Maintains code quality during changes",
+        "Follows test-driven development practices",
+        "Safely refactors production code",
+        "Ensures tests pass throughout refactoring"
+      ],
+      "title": "Tidy Up",
+      "type": "content"
+    },
+    {
+      "content": [
+        "User mentions skill name in chat",
+        "Copilot detects relevant skill context",
+        "Skill instructions are automatically loaded",
+        "Copilot follows skill's step-by-step process",
+        "Skill helps structure the response"
+      ],
+      "title": "Skill Invocation",
+      "type": "content"
+    },
+    {
+      "content": [
+        "YAML frontmatter: name and description",
+        "Clear when Copilot should use the skill",
+        "Actionable step-by-step instructions",
+        "Examples and templates",
+        "Quality checks or validation rules"
+      ],
+      "title": "SKILL.md Format",
+      "type": "content"
+    },
+    {
+      "content": [
+        "Use lowercase hyphenated names",
+        "Write clear, action-oriented descriptions",
+        "Focus on user outcomes, not implementation",
+        "Include examples and templates",
+        "Keep instructions under 400 lines"
+      ],
+      "title": "Creating Skills",
+      "type": "content"
+    },
+    {
+      "content": [
+        "Project skills: .github/skills/skill-name/",
+        "Personal skills: ~/.copilot/skills/skill-name/",
+        "Each skill gets its own directory",
+        "SKILL.md is the main file",
+        "Optional supporting files with clear names"
+      ],
+      "title": "Skill Location",
+      "type": "content"
+    },
+    {
+      "content": [
+        "1. Use interview skill to gather requirements",
+        "2. Use story-planner to break into user stories",
+        "3. Use remember skill to document decisions",
+        "4. Use tidy-up skill for refactoring",
+        "5. Use powerpoint to present findings"
+      ],
+      "title": "Planning Workflow",
+      "type": "content"
+    },
+    {
+      "content": [
+        "Skills extend Copilot's specialized capabilities",
+        "Located in .github/skills/ for project use",
+        "Each skill has clear SKILL.md format",
+        "Skills help structure complex workflows",
+        "Easy to create, share, and maintain"
+      ],
+      "title": "Key Takeaways",
+      "type": "content"
+    }
+  ]
+}
