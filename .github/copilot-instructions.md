@@ -43,7 +43,7 @@ Use commands to structure complex tasks, save learnings, and validate plans.
 
 1. **Check for project instructions** in `.github/instructions/`
    - Look for `<project-name>-instructions.md`
-   - Examples: `voidentityserver-instructions.md`, `voSSoclientdemo-instructions.md`
+   - Examples: `<project-1>-instructions.md`, `<project-2>-instructions.md`
 
 2. **If no instructions found:**
    - Suggest running `/analyze-project` to generate them first
