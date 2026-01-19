@@ -1,22 +1,22 @@
-## Save your latest learnings
+## Save your latest memories
 
 ### INSTRUCTIONS
 
 You are working inside a Copilot-based environment.
 
 1. Look at the files in  
-   `.copilot/learnings/`
+   `.copilot/memory/memories`
 
 2. Find the highest numbered markdown file  
-   - Example: `0119.md`
+   - Example: `memory_0119.md`
 
 3. Increment the number by 1 and zero-pad to 4 digits  
-   - Example: `0120.md`
+   - Example: `memory_0120.md`
 
 4. Create a new markdown file with that number inside  
-   `.copilot/learnings/`
+   `.copilot/memory/memories`
 
-5. Think carefully and write your latest learnings into that new file.
+5. Think carefully and write your latest memories into that new file.
 
 ---
 
@@ -28,7 +28,7 @@ You are working inside a Copilot-based environment.
     ```md
     # Copilot Agent Planning
     ```
-- If no explicit title is found, use **`Learnings`** as the title.
+- If no explicit title is found, use **`Memory`** as the title.
 
 ---
 
@@ -53,7 +53,12 @@ Rules:
 
 ---
 
-### Update README
+### Update README with tags
 
-Update the file:
+1. Look at the files in  
+   `.copilot/memory/project-memory.md`
+
+2. If no file was found, create one
+
+3. Update the file with the memory the new memory file name and add the tags related to that memory file.
 

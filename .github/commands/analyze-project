@@ -1,0 +1,104 @@
+# Copilot Agent: Project Exploration & Instruction Generation
+
+## Primary Goal
+Explore the repository and generate **project-specific development instructions** 
+so future Copilot agents understand:
+- How each project is built and organized
+- What coding patterns and conventions to follow
+- Constraints and legacy decisions that must be preserved
+
+## High-Level Execution Steps
+
+### Step 1: Explore the Solution
+1. List all projects in the repository (identify project files, workspaces, or manifest files)
+2. Determine project types: .NET, Node.js, Python, Java, or other
+3. Identify the technology stack for each project
+
+### Step 2: Analyze Each Project Individually
+For **each project**, extract and document:
+
+| Aspect | What to Include |
+|--------|-----------------|
+| **Purpose** | What does this project do? What problem does it solve? |
+| **Type & Language** | Library, service, CLI tool, web app, etc. + language version |
+| **Framework & Runtime** | .NET 7, Node 18, Python 3.11, etc. |
+| **Build System** | How is it compiled/packaged? (dotnet, npm/webpack, Maven, etc.) |
+| **Architecture** | Layered, MVC, CQRS, monolith, modular, etc. |
+| **Folder Structure** | Key folders and their responsibilities |
+| **Dependencies** | Major NuGet/npm/pip packages and why they're used |
+| **Integrations** | Databases, APIs, message queues, cloud services |
+| **Coding Patterns** | Naming conventions, error handling approach, logging strategy |
+| **Testing** | How are tests organized? (unit, integration, e2e?) |
+| **Known Constraints** | Legacy code, technical debt, fragile areas to avoid |
+
+### Step 3: Create Output Files
+Create one **`.github/instructions/<project-name>-instructions.md`** per project with sections:
+
+**Required Sections (in this order):**
+1. **Project Overview** - 2-3 sentences describing purpose and role
+2. **Technology Stack** - Language, framework versions, runtime
+3. **Architecture & Structure** - Design patterns, folder layout, key components
+4. **Dependencies & Integrations** - Libraries, external services, data stores
+5. **Development Guidelines** - How to write code that fits this project
+6. **Common Pitfalls** - What to avoid, known fragile areas
+
+**Format Guidelines:**
+- Be **clear and precise**, not verbose
+- Use bullet points for lists
+- Include brief code examples where patterns are unclear
+- Link to relevant files when describing architecture
+
+### Step 4: Interview User When Uncertain
+**Pause and interview if:**
+- Architecture decision is unclear (e.g., "why did they choose MVC over CQRS?")
+- Coding convention contradicts what the code shows
+- Ambiguous patterns with multiple interpretations
+- Missing context about legacy decisions
+- Unclear purpose of a project in the solution
+
+**Interview Rules:**
+- Ask **one question at a time**
+- Provide **2-3 specific options**, but allow custom answers
+- Ask to **clarify, not to invent** - never guess
+- Resume documentation after each answer
+
+**Example Interview Questions:**
+- "This project uses both Dependency Injection and static services. Which pattern is preferred for NEW code?"
+- "I see Entity Framework AND raw SQL queries. Should new data access use EF or continue with SQL?"
+- "Is the Exceptions folder for custom exceptions or cross-cutting concerns?"
+
+### Step 5: Validate Completion
+✅ `.github/instructions/` folder exists
+✅ One `.md` file per project exists
+✅ Each file covers all 6 required sections
+✅ All ambiguous decisions have been explicitly asked
+✅ No extra files created (instructions only)
+
+## Interaction Rules
+
+**When to Interview:**
+- Code patterns contradict documentation
+- Architectural decision is non-obvious
+- Multiple valid interpretations exist
+- Cannot infer intent from code alone
+
+**When to Infer (Don't Interview):**
+- Clear code patterns visible across multiple files
+- Consistent naming or structure evident
+- Framework conventions are obvious
+- Standard industry practices apply
+
+## Constraints & Guardrails
+
+- ❌ **Do NOT invent** architecture or patterns
+- ❌ **Do NOT create** generic templated instructions (be project-specific)
+- ❌ **Do NOT interview unnecessarily** - infer from code first
+- ✅ **Prefer inference** over assumptions
+- ✅ **Be precise** - practical advice only, not philosophy
+
+## Success Criteria
+
+- Instructions enable future agents to write code matching existing patterns
+- New developers can understand project structure without asking questions
+- Copilot agents know where to add features and what patterns to follow
+- Legacy constraints are documented so they won't be accidentally broken

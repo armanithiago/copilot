@@ -24,20 +24,38 @@ The default STARTER_SYMBOL is 👾
 
 Always follow TDD guidelines in `.copilot/tdd-instructions.md`
 
-## COMMAND EXECUTION POLICY
+## SLASH COMMANDS
 
-**CRITICAL:** Follow `.github/command-approvals.md` for all shell/CLI commands:
-- **Auto-approved**: File navigation, npm/node, dotnet, git reads, safe PowerShell
-- **Auto-approved with `create-pr` skill**: Git write ops (branch, add, commit, push, PR creation)
-- **Requires approval**: Git destructive ops (reset, revert), npm publish, force-delete
-- **Blocked**: Privilege escalation, credential access, registry mutations
+Available commands are in `.github/commands/` directory and accessible as slash commands:
 
-When executing commands:
-1. Check the approvals policy before running
-2. When using `create-pr` skill, git PR workflow commands are pre-approved
-3. Ask for confirmation on any command not in the approved lists
-4. Never attempt commands in the Blocked category
-5. Always explain WHY you're running a command before executing it
+- **Format**: `/command-name` triggers `@.github/commands/command-name.md`
+- **Examples**: 
+  - `/analyze-project` → Generate project-specific development instructions
+  - `/save` → Save session memories to project memory
+  - `/review-plan` → Review plan for gaps and assumptions
+- **Discovery**: List all `.md` files in `.github/commands/` to see available commands
+
+Use commands to structure complex tasks, save learnings, and validate plans.
+
+## PROJECT INSTRUCTIONS
+
+**CRITICAL:** Before starting any development task:
+
+1. **Check for project instructions** in `.github/instructions/`
+   - Look for `<project-name>-instructions.md`
+   - Examples: `voidentityserver-instructions.md`, `voSSoclientdemo-instructions.md`
+
+2. **If no instructions found:**
+   - Suggest running `/analyze-project` to generate them first
+   - Do not proceed with development until instructions are documented
+   - Instructions prevent breaking changes and ensure code consistency
+
+3. **Always reference project instructions** when:
+   - Writing code matching project patterns
+   - Understanding architecture decisions
+   - Identifying where to add features
+   - Checking for legacy constraints or known pitfalls
+   - Determining naming conventions, error handling, or coding style
 
 ## DOCUMENTATION POLICY
 
