@@ -131,6 +131,10 @@ Or use outline format for quick creation:
 ts-node src/tools/powerpoint-tool.ts outline "/path/to/presentation.pptx" '<json-structure>'
 ```
 
+### 7. Clean temporary files
+
+Delete every file created to execute this skill, leave only the .pptx file in place.
+
 ## Outline Format (Quick Method)
 
 For faster presentation creation without full JSON:
