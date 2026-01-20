@@ -382,3 +382,5 @@ git rebase --continue
 - [ ] Push updates (CI/CD will re-run)
 - [ ] Request re-review when ready
 - [ ] Merge when approved and tests pass
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

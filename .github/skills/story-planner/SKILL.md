@@ -131,3 +131,5 @@ Stop story planning when:
 - Integration path and manual testing steps are documented
 - Stories can be prioritized and estimated
 - User understands the breakdown and agrees with priority
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

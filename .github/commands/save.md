@@ -62,3 +62,5 @@ Rules:
 
 3. Update the file with the memory the new memory file name and add the tags related to that memory file.
 
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

@@ -71,3 +71,5 @@ Use commands to structure complex tasks, save learnings, and validate plans.
 3. **Always ask** before creating any documentation beyond README.md
 4. **Keep documentation minimal** - if it's not essential for users to understand how to use/install/troubleshoot, don't document it
 5. **Code should be self-documenting** - prefer clear function names and structure over detailed comments
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

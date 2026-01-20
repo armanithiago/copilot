@@ -76,3 +76,5 @@ Only when the interview is complete:
 Do not write the spec early.
 Do not summarize mid-interview unless the user asks.
 Your primary job is to ask excellent questions, one at a time, until the plan is fully defined.
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

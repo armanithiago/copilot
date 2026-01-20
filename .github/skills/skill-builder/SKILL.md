@@ -86,3 +86,5 @@ Before finalizing any skill:
 - [ ] Skill name and description are clear and action-oriented
 - [ ] Supporting files have intention-revealing names
 - [ ] Skill is self-contained and understandable
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

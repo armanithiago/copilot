@@ -385,3 +385,5 @@ Copilot should automatically invoke this skill when user:
 - ❌ Generate content based on prompt (that's for content skills)
 - ❌ Modify user's actual code (that's other skills)
 - ❌ Assume missing information (interviews instead)
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

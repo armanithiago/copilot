@@ -43,4 +43,5 @@ STARTER_CHARACTER = 🔥 for red test, 🦖 for green, ☄️ when refactoring, 
 - Avoid testing private methods or internal state
 - Use fakes and/or mock servers over mocks
 - Walking skeleton approach
-- Use fluent assertion libraries where applicable
+- Use fluent assertion libraries where applicable---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

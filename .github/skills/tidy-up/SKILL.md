@@ -75,4 +75,5 @@ For each approved refactor:
 4. **Remove duplication** - DRY principle
 5. **Simplify conditionals** - reduce nesting, use guard clauses
 6. **Remove unnecessary locals** - inline single-use variables
-7. **Clean imports** - remove unused imports
+7. **Clean imports** - remove unused imports---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

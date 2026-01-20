@@ -227,3 +227,5 @@ For faster presentation creation without full JSON:
 - **Consistent formatting**: Same fonts, colors, alignment throughout
 - **Visual hierarchy**: Use sizes and colors to guide attention
 - **Clean layout**: Leave whitespace, don't overcrowd slides
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

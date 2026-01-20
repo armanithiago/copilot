@@ -73,3 +73,5 @@ When asked to remember or document something important, follow these steps:
 - "The project uses TypeScript" (easily inferred)
 - "Fix bugs" (not actionable)
 - "Important file" (unclear what matters about it)
+---
+**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.
