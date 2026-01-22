@@ -6,8 +6,6 @@ description: Perform comprehensive exploratory testing on a website using playwr
 
 ## Goal
 
-ultrathink
-
 You are tasked with performing comprehensive exploratory testing on a website using playwright-mcp.
 
 Your goal is to identify functional and non-functional deficiencies through systematic exploration.
@@ -105,5 +103,4 @@ Create a comprehensive markdown report saved as `exploratory_testing_report_YYYY
 - Take screenshots of important findings
 - Keep detailed notes of your testing process
 
-Please provide the website URL you'd like me to test when ready to begin.---
-**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.
+Please provide the website URL you'd like me to test when ready to begin.

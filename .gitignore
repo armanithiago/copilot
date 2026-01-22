@@ -32,3 +32,6 @@ logs/
 *.tmp
 *.bak
 .cache/
+
+# Personal memories (local-only context, not shared)
+.github/personal-memories/

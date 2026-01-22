@@ -203,4 +203,6 @@ For each project file, include these **required sections (in this order):**
 - ✅ **Future use**: Command can be run on any [SolutionName] without modification
 - ✅ Developers can load only relevant instructions for a task (e.g., "load Project1 and Project3 instructions only")
 ---
+---
+
 **Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.

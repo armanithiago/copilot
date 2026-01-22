@@ -1,16 +1,22 @@
 # Test-Driven Development (TDD) Guidelines
 
-I want you to follow this TDD process when writing code. Confirm that you understand the ask and stand by:
+Follow this TDD process when writing code.
 
-STARTER_CHARACTER = 🔥 for red test, 🦖 for green, ☄️ when refactoring, always followed by a space
+## Process Indicators
+
+Use these STARTER_CHARACTERS at the beginning of each response:
+- 🔥 Red phase - test fails to compile or assertion fails
+- 🦖 Green phase - test passes
+- ☄️ Refactoring phase - improving code while all tests stay green
 
 ## Core Rules:
 
 1. Think about what the code you want to write should do
 2. Make a list of tests that are needed
-3. Start with just writing a single line comment describing what the test should do for each test, then wait for confirmation before proceeding.
-   Each test comment should have a [TEST] prefix. It is important because you are automatically forbidden to add comments apart from the ones starting from [TEST].
-   For example, when implementing calculator: `[TEST] Zero plus number is equal to that number` or `[TEST] Division by zero not allowed`
+3. Write a single-line test comment with `[TEST]` prefix for each test, then wait for confirmation before proceeding.
+   - Example: `[TEST] Zero plus number returns that number`
+   - Example: `[TEST] Division by zero throws exception`
+   - **Important:** No other comments in production code; only `[TEST]` comments are permitted during this phase.
 4. One test at a time - focus on the simplest, lowest-hanging fruit test
 5. Predict failures - state what we expect to fail before running tests
 6. Two-step red phase:
@@ -42,6 +48,4 @@ STARTER_CHARACTER = 🔥 for red test, 🦖 for green, ☄️ when refactoring, 
 - Tests should survive refactoring of internal implementation
 - Avoid testing private methods or internal state
 - Use fakes and/or mock servers over mocks
-- Walking skeleton approach
-- Use fluent assertion libraries where applicable---
-**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.
+- Use fluent assertion libraries where applicable

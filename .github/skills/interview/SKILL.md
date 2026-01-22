@@ -19,7 +19,7 @@ When invoked, follow these rules strictly.
 The user has a plan file or plan description. Read it carefully before asking questions.
 Assume the plan is incomplete until proven otherwise.
 
-You must conduct the interview by asking **multiple questions, one at a time**.
+You must conduct the interview by asking **one question at a time**, in multiple sequential turns.
 Never ask multiple questions in the same message.
 
 Each question must:

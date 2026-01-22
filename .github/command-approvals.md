@@ -37,8 +37,8 @@ This document defines which commands Copilot CLI can execute without explicit us
 - `git --no-pager` - output formatting
 - `git fetch` - retrieve from remote
 
-### Git Operations for PR Workflow (Auto-Approved with skill: create-pr)
-✅ **Auto-Approved when using `create-pr` skill:**
+### Git Write Operations (Auto-Approved with `create-pr` skill only)
+✅ **Auto-Approved ONLY when using `create-pr` skill:**
 - `git checkout <branch>` - switch branches
 - `git checkout -b <branch>` - create and switch branches
 - `git pull origin <branch>` - update from remote

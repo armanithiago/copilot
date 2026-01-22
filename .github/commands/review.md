@@ -38,10 +38,8 @@ Conduct a comprehensive code review of the current changes, focusing on code qua
 ## 📁 File-Specific Guidelines
 
 ### Source Code Files (.ts, .tsx, .py, .js, etc.)
-- Single Responsibility Principl
+- **Single Responsibility Principle**: Ensure each function has one clear purpose
 
-Ask the user after the report is given if they want to refactor all of the identified smells. 
-An affirmative answer should trigger a refactoring sub sgent that will carry out the tasks. Use another sub agent to double check both the code review and the refactoring.
+Ask the user after the report is given if they want to refactor all identified issues. An affirmative answer should trigger a refactoring sub-agent to carry out the tasks. Use another sub-agent to verify both the code review and the refactoring.
 
-Ensure the code builds, tests pass, and commit to run the pre-commit hook.---
-**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.
+Ensure the code builds, tests pass, and run the pre-commit hook before committing.

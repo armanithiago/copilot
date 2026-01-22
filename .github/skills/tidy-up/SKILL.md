@@ -5,9 +5,12 @@ description: TDD Production Code Refactoring Process. Triggers on 'tidy up'.
 
 # TDD Production Code Refactoring Process
 
-STARTER_CHARACTER = 🟣
+## Refactoring Indicators
 
-**NEVER** make changes to Test code in this process.
+Use this indicator to signify the refactoring phase:
+- 🟣 Refactoring phase - improving code while tests stay green
+
+**NEVER** make changes to test code in this process.
 
 This process is for refactoring production code with test coverage.
 
@@ -75,5 +78,14 @@ For each approved refactor:
 4. **Remove duplication** - DRY principle
 5. **Simplify conditionals** - reduce nesting, use guard clauses
 6. **Remove unnecessary locals** - inline single-use variables
-7. **Clean imports** - remove unused imports---
-**Sub-agent invocation:** Use the command `#runSubagent` to invoke sub-agents; include a unique `subAgentInvocationId` string (e.g., a UUID) to correlate nested calls and avoid ambiguity.
+7. **Clean imports** - remove unused imports
+
+## Completion Checklist
+
+- [ ] All approved refactorings completed
+- [ ] All tests passing
+- [ ] Code style guidelines followed
+- [ ] Each change committed with proper message format
+- [ ] No test code was modified
+
+---
